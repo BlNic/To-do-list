@@ -1,0 +1,79 @@
+html {
+    box-sizing: border-box;
+}
+
+* ::after,
+::before {
+    box-sizing: inherit;
+}
+
+.section {
+    background-color: white;
+    padding: 0 20px;
+    margin: 0 0 10px 0;
+    box-shadow: 2px 2px 1px rgb(218, 221, 224);
+}
+
+.section__header {
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(218, 221, 224);
+    margin: 0;
+}
+
+.section__form {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.section__form--input {
+    border: 1px solid rgb(218, 221, 224);
+    padding: 10px;
+}
+
+.section__form--button {
+    background-color: teal;
+    color: white;
+    border-style: none;
+    padding: 5px;
+    order: 1;
+}
+
+.section__form--button:hover {
+    background-color: rgb(43, 160, 160);
+}
+
+.section__form--button:active {
+    background-color: rgb(12, 74, 74);
+}
+
+.section__tasks {
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+}
+
+.section__tasks--item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.button__done {
+    display: flex;
+    background-color: green;
+    color: white;
+}
+
+.button__remove {
+    display: flex;
+    order: 1;
+    background-color: red;
+    color: white;
+}

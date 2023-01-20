@@ -1,18 +1,18 @@
-
 {
+
     const tasks = [
-        {
-            content: "obejrzeć lekcję",
-            done: false,
-        },
-        {
-            content: "zrobić nototaki",
-            done: true,
-        },
-        {
-            content: "odrobić pracę domową",
-            done: false,
-        },
+        /* {
+             content: "obejrzeć lekcję",
+             done: false,
+         },
+         {
+             content: "zrobić nototaki",
+             done: true,
+         },
+         {
+             content: "odrobić pracę domową",
+             done: false,
+         },*/
     ];
 
     const addNewTask = (newTaskContent) => {
@@ -38,9 +38,10 @@
 
         for (const task of tasks) {
             htmlString += `
-    <li${task.done ? " style=\"text-decoration: line-through\"" : ""}>
-    <button class="js-done">już?</button>
-    <button class="js-remove">usuń</button>
+    <li class="section__tasks--item${task.done ? " style=\"text-decoration: line-through\"" : ""}">
+    
+    <button class="js-done button__done">✓</button>
+    <button class="js-remove button__remove">🗑</button>
     ${task.content}
     </li>
         `;
@@ -88,8 +89,11 @@
 }
 
 
-/* before remodeling
+/* 
 
+before remodeling
+min22
+ 
 {
     const tasks = [
         {
