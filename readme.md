@@ -4,7 +4,7 @@ Simple to do list where you can add new tasks, mark selected task as "done" or r
 
 ### Demo
 
-https://github.com/BlNic/To-do-list
+https://blnic.github.io/To-do-list/
 
 ![Todolist-gif](https://github.com/BlNic/To-do-list/blob/main/images/todo-list2.gif?raw=true)
 
