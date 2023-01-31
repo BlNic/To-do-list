@@ -28,6 +28,12 @@ html {
     padding: 20px 0;
 }
 
+@media (max-width: 768px) {
+    .section__form {
+        grid-template-columns: 1fr;
+    }
+}
+
 .section__form--input {
     border: 1px solid rgb(218, 221, 224);
     padding: 10px;
@@ -37,7 +43,7 @@ html {
     background-color: teal;
     color: white;
     border-style: none;
-    padding: 5px;
+    padding: 10px;
     order: 1;
 }
 
