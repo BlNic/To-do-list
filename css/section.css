@@ -55,15 +55,17 @@ html {
     padding: 20px;
     margin: 0;
     list-style: none;
-    font-style: italic;
 }
 
 .section__tasks--item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
     padding: 10px;
+}
+
+.section__tasks--itemDone {
+    text-decoration: line-through;
 }
 
 .button__done {
@@ -80,9 +82,4 @@ html {
     color: white;
     border: none;
     padding: 10px;
-}
-
-
-.section__tasks--itemDone {
-    text-decoration: line-through;
 }
