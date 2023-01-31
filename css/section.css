@@ -78,7 +78,12 @@ html {
     display: flex;
     background-color: green;
     color: white;
+    width: 40px;
     padding: 10px;
+}
+
+.button__done:hover {
+    background-color: rgb(68, 154, 68);
 }
 
 .button__remove {
@@ -86,6 +91,17 @@ html {
     order: 1;
     background-color: red;
     color: white;
-    border: none;
+    width: 40px;
+    padding: 10px;
+}
+
+.button__remove:hover {
+    background-color: rgb(244, 97, 5);
+}
+
+.task__ {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     padding: 10px;
 }
