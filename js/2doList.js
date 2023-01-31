@@ -38,13 +38,20 @@
 
         for (const task of tasks) {
             htmlString += `
-    <li class="section__tasks--item${task.done ? " style=\"text-decoration: line-through\"" : ""}">
+    <li class="section__tasks--item${task.done ? " " : ""} js-tasks">
     
     <button class="js-done button__done">✓</button>
-    <button class="js-remove button__remove">🗑</button>
+
+    <span class="task__${task.done ? " section__tasks--itemDone" : ""}">
     ${task.content}
+  </span>    
+
+  <button class="js-remove button__remove">🗑</button>
     </li>
         `;
+            /*
+            style=\"text-decoration: line-through\"
+            */
         }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
