@@ -1,6 +1,7 @@
 # Blanka Nicman
 ## To do list 
 
+Siple to do list where you can add new tasks, mark selected task as "done" or remove it, when it's done.
 ### Demo
 
 https://github.com/BlNic/To-do-list
