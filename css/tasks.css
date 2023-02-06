@@ -7,7 +7,7 @@ html {
     box-sizing: inherit;
 }
 
-.task__ {
+.task__content {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -27,6 +27,7 @@ html {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
+    word-break: break-word;
 }
 
 .tasks__item--done {
