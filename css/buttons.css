@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+}
+
+* ::after,
+::before {
+    box-sizing: inherit;
+}
+
+.button__done {
+    display: flex;
+    background-color: green;
+    color: white;
+    width: 40px;
+    padding: 10px;
+}
+
+.button__done:hover {
+    background-color: rgb(68, 154, 68);
+}
+
+.button__remove {
+    display: flex;
+    order: 1;
+    background-color: red;
+    color: white;
+    width: 40px;
+    padding: 10px;
+}
+
+.button__remove:hover {
+    background-color: rgb(244, 97, 5);
+}

@@ -1,0 +1,34 @@
+html {
+    box-sizing: border-box;
+}
+
+* ::after,
+::before {
+    box-sizing: inherit;
+}
+
+.task__ {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.tasks {
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+}
+
+.tasks__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.tasks__item--done {
+    text-decoration: line-through;
+}

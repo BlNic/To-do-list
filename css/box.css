@@ -12,12 +12,12 @@ html {
     font-family: "Mukta", sans-serif;
 }
 
-.box__main {
+.main {
     max-width: 800px;
     padding: 20px;
     margin: 0 auto;
 }
 
-.box__main--header {
+.main--header {
     margin: 0 0 10px 0;
 }

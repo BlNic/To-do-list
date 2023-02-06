@@ -1,18 +1,6 @@
 {
 
     const tasks = [
-        /* {
-             content: "obejrzeć lekcję",
-             done: false,
-         },
-         {
-             content: "zrobić nototaki",
-             done: true,
-         },
-         {
-             content: "odrobić pracę domową",
-             done: false,
-         },*/
     ];
 
     const addNewTask = (newTaskContent) => {
@@ -38,20 +26,17 @@
 
         for (const task of tasks) {
             htmlString += `
-    <li class="section__tasks--item${task.done ? " " : ""} js-tasks">
+    <li class="tasks__item${task.done ? " " : ""} js-tasks">
     
     <button class="js-done button__done">✓</button>
 
-    <span class="task__${task.done ? " section__tasks--itemDone" : ""}">
+    <span class="task__${task.done ? " tasks__item--done" : ""}">
     ${task.content}
   </span>    
 
   <button class="js-remove button__remove">🗑</button>
     </li>
         `;
-            /*
-            style=\"text-decoration: line-through\"
-            */
         }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
@@ -95,65 +80,3 @@
     init();
 }
 
-
-/* 
-
-before remodeling
-min22
- 
-{
-    const tasks = [
-        {
-            content: "obejrzeć lekcję",
-            done: false,
-        },
-        {
-            content: "zrobić nototaki",
-            done: true,
-        },
-        {
-            content: "odrobić pracę domową",
-            done: false,
-        },
-    ];
-
-    const render = () => {
-        let htmlString = "";
-
-        for (const task of tasks) {
-            htmlString += `
-    <li${task.done ? " style=\"text-decoration: line-through\"" : ""}>
-    ${task.content}
-    </li>
-        `;
-        }
-
-        document.querySelector(".js-tasks").innerHTML = htmlString;
-    };
-
-    const init = () => {
-        render();
-
-        const form = document.querySelector(".js-form");
-
-        form.addEventListener("submit", (event) => {
-            event.preventDefault();
-
-            const newTaskContent = document.querySelector(".js-newTask").value.trim();
-            if (newTaskContent === "") {
-                return;
-            }
-
-            tasks.push({
-                content: newTaskContent,
-            });
-
-            render();
-        });
-    };
-
-    init();
-}
-*/
-
-/* 05:40 */
