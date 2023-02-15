@@ -16,7 +16,7 @@ html {
 
 .tasks {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr auto;
     padding: 20px;
     margin: 0;
     list-style: none;
