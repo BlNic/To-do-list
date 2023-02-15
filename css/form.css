@@ -9,10 +9,12 @@ html {
 
 .form {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 1fr auto;
     gap: 20px;
     justify-content: space-between;
     padding: 20px 0;
+    background-color: blueviolet;
+
 }
 
 @media (max-width: 768px) {
