@@ -29,7 +29,6 @@ html {
     padding: 10px;
     word-break: break-word;
     border-bottom: 1px solid rgb(218, 221, 224);
-    background-color: bisque;
 }
 
 .tasks__item--done {

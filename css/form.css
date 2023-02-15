@@ -13,8 +13,6 @@ html {
     gap: 20px;
     justify-content: space-between;
     padding: 20px 0;
-    background-color: blueviolet;
-
 }
 
 @media (max-width: 768px) {
